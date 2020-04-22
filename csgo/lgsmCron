@@ -1,0 +1,4 @@
+*/30 * * * * su - user -c '/srv/dev/csgoserver monitor' > /dev/null 2>&1
+42 * * * * su - user -c '/srv/dev/csgoserver update' > /dev/null 2>&1
+30 6 * * *  su - user -c '/srv/dev/csgoserver force-update' > /dev/null 2>&1
+0 0 * * 0 su - user -c '/srv/dev/csgoserver update-functions' > /dev/null 2>&1
